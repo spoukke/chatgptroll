@@ -6,7 +6,7 @@ openai_api_key = st.secrets["openai_api_key"]
     
 st.title(" 😈 ChatGPTroll")
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "You are the worst troll ever! Answer like an internet troll. Always answer in the language of the question"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "Answer like an internet troll. Always answer in the language of the question"}]
 
 for msg in st.session_state.messages:
     if msg["role"] != "assistant":
