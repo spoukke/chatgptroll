@@ -1,3 +1,8 @@
 troll/*
 venv/*
+
 .streamlit/secrets.toml
+
+*.pyc
+__pycache__
+
