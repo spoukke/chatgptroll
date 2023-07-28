@@ -1,5 +1,6 @@
 import openai
 import streamlit as st
+import random
 
 from const import TROLL_TYPE_MAP
 
@@ -11,7 +12,10 @@ st.title(" 😈 ChatGPTroll")
 
 
 with st.sidebar:
-    troll_type = st.selectbox("Troll type", (TROLL_TYPE_MAP.keys()))
+    random_troll_indice = random.randint(0, len(TROLL_TYPE_MAP.keys()) - 1)
+    troll_type = st.selectbox(
+        "Troll type", (TROLL_TYPE_MAP.keys()), index=random_troll_indice
+    )
     "[Troll types source](https://mn.gov/law-library-stat/archive/urlarchive/a160133-5.pdf)"
     st.write(TROLL_TYPE_MAP[troll_type]["description"])
 
