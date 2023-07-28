@@ -1,0 +1,3 @@
+troll/*
+venv/*
+.streamlit/secrets.toml
