@@ -7,7 +7,7 @@ openai_api_key = st.secrets["openai_api_key"]
 troll_type = "None"
 
 st.title(" 😈 ChatGPTroll")
-"[Source of Knowledge](https://github.com/spoukke/chatgptroll)"
+"[Source of Knowledge](https://github.com/spoukke/ChatGPTroll)"
 
 
 with st.sidebar:
