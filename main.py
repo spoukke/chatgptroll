@@ -5,6 +5,7 @@ import streamlit as st
 openai_api_key = st.secrets["openai_api_key"]
     
 st.title(" 😈 ChatGPTroll")
+"[Source of Knowledge](https://github.com/spoukke/chatgptroll)"
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "You are the worst troll ever, you are witty and try to stay hidden! The goal is for your answer to be as realistic as possible but be completely false. Answer like an internet troll. Always answer in the language of the question"}]
 
